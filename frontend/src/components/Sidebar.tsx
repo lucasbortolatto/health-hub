@@ -3,7 +3,7 @@
 import React from 'react';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
-import { LayoutGrid, Library, Home, Activity } from 'lucide-react';
+import { LayoutGrid, Dumbbell, Home, Activity } from 'lucide-react';
 import { cn } from '@/lib/utils';
 
 export default function Sidebar() {
@@ -11,7 +11,7 @@ export default function Sidebar() {
 
   const menuItems = [
     { name: 'Dashboard', href: '/', icon: Home },
-    { name: 'Biblioteca', href: '/library', icon: Library },
+    { name: 'Exercicios', href: '/exercises', icon: Dumbbell },
     { name: 'Meus Treinos', href: '/workouts', icon: Activity },
   ];
 

@@ -15,7 +15,7 @@ interface Exercise {
   muscle_group: string;
 }
 
-export default function LibraryPage() {
+export default function ExercisesPage() {
   const [searchTerm, setSearchTerm] = useState('');
   const [isFormVisible, setIsFormVisible] = useState(false);
   const [editingExercise, setEditingExercise] = useState<Exercise | null>(null);
@@ -123,7 +123,7 @@ export default function LibraryPage() {
       <header className="flex flex-col sm:flex-row sm:items-center justify-between gap-6">
         <div className="space-y-1">
           <h1 className="text-3xl font-black text-slate-900 tracking-tight flex items-center gap-3">
-            Biblioteca
+            Exercícios
             <div className="bg-blue-100 text-blue-600 text-[10px] font-black px-2 py-1 rounded-md uppercase tracking-widest">v1.2</div>
           </h1>
           <p className="text-slate-500 text-sm font-medium">Gestão centralizada de performance e biomecânica.</p>
