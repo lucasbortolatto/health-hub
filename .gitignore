@@ -1,0 +1,21 @@
+# Dependências (Ignora em qualquer pasta)
+node_modules/
+venv/
+__pycache__/
+.next/
+
+# Banco de Dados e Env
+*.db
+.env
+.env*
+
+# Sistema e Build
+dist/
+build/
+.DS_Store
+*.pem
+*.pyc
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
