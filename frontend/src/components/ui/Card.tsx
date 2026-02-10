@@ -1,12 +1,13 @@
-
 import React from 'react';
 import { cn } from '@/lib/utils';
 
+// Fixed: Explicitly extending HTMLAttributes and ensuring className/children are recognized
 interface CardProps extends React.HTMLAttributes<HTMLDivElement> {
   padding?: 'none' | 'sm' | 'md' | 'lg';
 }
 
-const Card = ({ className, padding = 'md', children, ...props }: CardProps) => {
+// Fixed: Using React.FC to ensure React reserved props like 'key' and standard attributes are handled correctly
+const Card: React.FC<CardProps> = ({ className, padding = 'md', children, ...props }) => {
   const paddings = {
     none: 'p-0',
     sm: 'p-3',
